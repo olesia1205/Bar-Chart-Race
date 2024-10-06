@@ -12,6 +12,17 @@ h1 {
   color: #492c7d;
 }
 
+h2 {
+  text-align: center;
+  font-size: 1.8vw;
+  color: #492c7da1;
+}
+
+h3 {
+  font-size: 1.4vw;
+  color: rgb(0 0 0 / 80%);
+}
+
 svg {
   display: block;
   width: 100%;
