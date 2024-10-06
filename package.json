@@ -1,0 +1,19 @@
+{
+  "name": "bar-chart-race",
+  "description": "",
+  "main": "index.js",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "webpack -c webpack.config.js -w"
+  },
+  "author": "",
+  "licence": "",
+  "dependencies": {
+    "d3": "^5.12.0"
+  },
+  "devDependencies": {
+    "rollup": "^1.26.3",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
