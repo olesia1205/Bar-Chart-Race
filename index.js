@@ -38,13 +38,13 @@ function render(data) {
                       .append('svg')
                       .attr('width', '100%')
                       .attr('height', '100%')
-                      .attr('viewBox', `0 0 1000 600`)
+                      .attr('viewBox', `0 0 1000 560`)
                       .attr('preserveAspectRatio', 'xMidYMid meet');
 
   const width = 1000; // Исходная ширина для расчета
   const height = 600; // Исходная высота для расчета
   const interval = 2000; // Интервал обновления в миллисекундах
-  const topN = 16;
+  const topN = 18;
 
   const margin = { left: 200, right: 60, top: 40, bottom: 40 };
   const innerWidth = width - margin.left - margin.right;
@@ -58,7 +58,7 @@ function render(data) {
   intervals.sort((a, b) => {
     const startA = parseInt(a.split('-')[0], 10);
     const startB = parseInt(b.split('-')[0], 10);
-    return startA - startB;0
+    return startA - startB;
   });
 
   // Устанавливаем домен для цветовой шкалы
@@ -107,7 +107,7 @@ function render(data) {
     const tickData = data
       .map(d => ({ Country: d['Country'], value: d[currentInterval] }))
       .sort((a, b) => d3.descending(a.value, b.value))
-      .slice(0, 16); // topN = 16
+      .slice(0, 18); // topN = 16
 
     // Обновляем шкалы
     xScale.domain([0, d3.max(tickData, d => d.value)]);
