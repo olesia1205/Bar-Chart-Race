@@ -44,7 +44,7 @@ function render(data) {
   const width = 1000; // Исходная ширина для расчета
   const height = 600; // Исходная высота для расчета
   const interval = 2000; // Интервал обновления в миллисекундах
-  const topN = 18;
+  // const topN = 29;
 
   const margin = { left: 200, right: 60, top: 40, bottom: 40 };
   const innerWidth = width - margin.left - margin.right;
@@ -77,7 +77,7 @@ function render(data) {
                          .attr('x', innerWidth - 100)
                          .attr('y', -20)
                          .attr('class', 'intervalLabel')
-                         .attr('font-size', '22px')
+                         .attr('font-size', '20px')
                          .attr('font-weight', 'bold')
                          .text(intervals[0]);
 
@@ -107,7 +107,7 @@ function render(data) {
     const tickData = data
       .map(d => ({ Country: d['Country'], value: d[currentInterval] }))
       .sort((a, b) => d3.descending(a.value, b.value))
-      .slice(0, 18); // topN = 16
+      .slice(0, 29); // topN = 29
 
     // Обновляем шкалы
     xScale.domain([0, d3.max(tickData, d => d.value)]);

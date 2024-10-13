@@ -9,19 +9,19 @@
 h1 {
   margin: 10px 0 0;
   text-align: center;
-  font-size: 1.9vw;
+  font-size: 1.8vw;
   color: #492c7d;
 }
 
 h2 {
   margin: 0;
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   color: #492c7da1;
 }
 
 h3 {
-  margin: 0;
+  margin: 10px 0 0;
   font-size: 1.1vw;
   color: rgb(0 0 0 / 80%);
 }
@@ -33,12 +33,12 @@ svg {
 }
 
 .num {
-  font-size: 0.9em;
+  font-size: 0.65em;
   fill: #492c7d;
 }
 
 .label {
-  font-size: 1.1em;
+  font-size: 0.8em;
   font-weight: bold;
   fill: #492c7d;
 }
